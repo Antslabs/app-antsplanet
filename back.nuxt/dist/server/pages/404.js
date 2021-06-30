@@ -1,0 +1,1 @@
+exports.ids=[1],exports.modules={98:function(t,s,e){"use strict";e.r(s);var n=e(2),o=Object(n.a)({},function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"not-found"},[this._ssrNode("\n  Not Found\n")])},[],!1,null,null,"5a774121");s.default=o.exports}};

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/Users/bowen/project/dapp-mobile/pages/404.vue",
+    "chunkName": "pages/404",
+    "_name": "_40e00754"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/bowen/project/dapp-mobile/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5f37f570"
+  }
+]

@@ -1,0 +1,133 @@
+@import './variables.scss';
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@each $size in $font-sizes {
+  .font-#{$size}{
+      font-size: $size + dpx;
+  }
+}
+.white{
+  color: $white;
+}
+.grey{
+  color: $grey;
+}
+@each $gap in $gaps {
+  @each $dir in $directions {
+    .#{$dir}-#{$gap}{
+      margin-#{$dir}: $gap+dpx;
+    }
+  }
+}
+
+@each $r in $radius {
+  .radius-#{$r}{
+    border-radius: $r+dpx;
+  }
+}
+.flex{
+  display: flex;
+  &.column{
+    flex-direction: column;
+  }
+  &.a-center{
+    align-items: center;
+  }
+  &.j-center{
+    justify-content: center;
+  }
+  &.j-between{
+    justify-content: space-between;
+  }
+  &.j-evenly{
+    justify-content: space-evenly;
+  }
+  &.j-around{
+    justify-content: space-around;
+  }
+}
+.bg-main{
+  background: $bgMain;
+}
+.bg-card{
+  background: $bgCard;
+}
+.bg-gradient{
+  background: $bgGradient;
+}
+.bg-black{
+  background: $bgBlack;
+}
+.bg-white{
+  background: white;
+}
+.pointer{
+  cursor: pointer;
+}
+.fixed{
+  position: fixed;
+}
+.abs{
+  position: absolute;
+}
+.white{
+  color: white;
+}
+.text-center{
+  text-align: center;
+}
+.main-content{
+  padding-top: 186dpx;
+}
+.text-main{
+  font-size: 28dpx;
+  color: #999;
+}
+.el-dialog{
+  border-radius: 28dpx!important;
+}
+body,#__nuxt ,#__layout{
+  min-height: 100vh;
+}
+#__layout>div{
+  min-height: 100vh;
+  background: $bgMain;
+}
+.error-page{
+  margin-top: 200dpx;
+}
+@media screen and (max-width: 768px) {
+  .text-main{
+    font-size: 24rpx;
+    color: #999;
+  }
+  .font-28{
+    font-size: 24rpx;
+  }
+  .error-page{
+    margin-top: 120rpx;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .text-main{
+    font-size: 24px;
+    color: #999;
+  }
+  .font-28{
+    font-size: 28px;
+  }
+  .el-dialog {
+    width: 1200px!important
+  }
+}
+.gray-filter{
+  filter: grayscale(100%);
+}
